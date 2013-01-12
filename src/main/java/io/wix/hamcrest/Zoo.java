@@ -22,13 +22,13 @@ public class Zoo {
             .add(new Animal("chicken", traits(CanFly, LaysEggs, HasFeathers)))
             .add(new Animal("ostrich", traits(LaysEggs, HasFeathers)))
             .add(new Animal("cat", traits(HasMilk)))
-            .add(new Animal("penguin", traits(LaysEggs, Aquatic)))
+            .add(new Animal("penguin", traits(LaysEggs, Aquatic, HasFeathers)))
             .add(new Animal("bat", traits(HasMilk, CanFly)))
             .add(new Animal("platypus", traits(HasMilk, LaysEggs, Aquatic)))
             .add(new Animal("whale", traits(HasMilk, Aquatic)))
-            .add(new Animal("salmon", traits(Aquatic, LaysEggs, HasGills)))
-            .add(new Animal("shark", traits(Aquatic, HasGills)))
-            .add(new Animal("flying fish", traits(CanFly, Aquatic, LaysEggs, HasGills)))
+            .add(new Animal("salmon", traits(Aquatic, LaysEggs)))
+            .add(new Animal("shark", traits(Aquatic)))
+            .add(new Animal("flying fish", traits(CanFly, Aquatic, LaysEggs)))
             .build();
 
     public Iterable<Animal> mammals() {

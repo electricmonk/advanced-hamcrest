@@ -4,6 +4,8 @@ import org.hamcrest.FeatureMatcher;
 import org.hamcrest.Matcher;
 import org.junit.Test;
 
+import static io.wix.hamcrest.Animal.Trait.*;
+import static io.wix.hamcrest.HasTrait.hasTrait;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 
@@ -32,17 +34,16 @@ public class ZooTest {
 
     @Test
     public void birds() {
-        assertThat(zoo.birds(), hasItem(a("chicken")));
-        assertThat(zoo.birds(), hasItem(an("ostrich")));
-        assertThat(zoo.birds(), hasItem(a("penguin")));
-        assertThat(zoo.birds(), not(hasItem(a("flying fish"))));
+        assertThat(zoo.birds(), everyItem(hasTrait(HasFeathers)));
     }
 
     @Test
     public void fish() {
-        assertThat(zoo.fish(), containsInAnyOrder(
-                a("salmon"), a("shark"), a("flying fish")
-        ));
+        assertThat(zoo.fish(), hasItem(a("salmon")));
+        assertThat(zoo.fish(), hasItem(an("shark")));
+        assertThat(zoo.fish(), hasItem(a("flying fish")));
+        assertThat(zoo.fish(), not(hasItem(a("penguin"))));
+        assertThat(zoo.fish(), not(hasItem(a("whale"))));
     }
 
     private Matcher<Animal> an(String name) {

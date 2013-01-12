@@ -10,7 +10,7 @@ import java.util.Set;
  */
 public class Animal {
 
-    enum Trait {HasMilk, LaysEggs, CanFly, HasFeathers, Aquatic, HasGills}
+    enum Trait {HasMilk, LaysEggs, CanFly, HasFeathers, Aquatic}
 
     public final String name;
     public final Set<Trait> traits;

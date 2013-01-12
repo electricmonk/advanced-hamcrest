@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.hasItem;
 public class HasTrait extends FeatureMatcher<Animal, Set<Trait>> {
 
     public HasTrait(Matcher<? super Set<Trait>> subMatcher) {
-        super(subMatcher, " the trait ", "trait");
+        super(subMatcher, "an animal with", "with a trait that");
     }
 
     @Override
