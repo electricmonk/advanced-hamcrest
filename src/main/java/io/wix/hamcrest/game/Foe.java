@@ -7,19 +7,11 @@ package io.wix.hamcrest.game;
 public class Foe {
     enum Type {Goblin, Orc, Human}
 
-    private final Type type;
-    private final int life;
+    public final Type type;
+    public final int life;
 
     public Foe(Type type, int life) {
         this.type = type;
         this.life = life;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public int getLife() {
-        return life;
     }
 }
