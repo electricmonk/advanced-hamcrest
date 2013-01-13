@@ -1,4 +1,4 @@
-package io.wix.hamcrest;
+package io.wix.hamcrest.zoo;
 
 import com.google.common.collect.ImmutableSet;
 

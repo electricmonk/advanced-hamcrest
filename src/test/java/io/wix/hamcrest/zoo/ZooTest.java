@@ -1,11 +1,13 @@
-package io.wix.hamcrest;
+package io.wix.hamcrest.zoo;
 
+import io.wix.hamcrest.zoo.Animal;
+import io.wix.hamcrest.zoo.Zoo;
 import org.hamcrest.FeatureMatcher;
 import org.hamcrest.Matcher;
 import org.junit.Test;
 
-import static io.wix.hamcrest.Animal.Trait.*;
-import static io.wix.hamcrest.HasTrait.hasTrait;
+import static io.wix.hamcrest.zoo.Animal.Trait.*;
+import static io.wix.hamcrest.zoo.HasTrait.hasTrait;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 

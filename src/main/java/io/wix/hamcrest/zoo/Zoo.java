@@ -1,4 +1,4 @@
-package io.wix.hamcrest;
+package io.wix.hamcrest.zoo;
 
 import com.google.common.collect.ImmutableList;
 import org.hamcrest.Matcher;
@@ -6,10 +6,10 @@ import org.hamcrest.Matcher;
 import java.util.List;
 
 import static com.google.common.collect.Iterables.filter;
-import static io.wix.hamcrest.Animal.traits;
-import static io.wix.hamcrest.Animal.Trait.*;
-import static io.wix.hamcrest.HasTrait.hasTrait;
-import static io.wix.hamcrest.MatcherPredicate.usingMatcher;
+import static io.wix.hamcrest.zoo.Animal.traits;
+import static io.wix.hamcrest.zoo.Animal.Trait.*;
+import static io.wix.hamcrest.zoo.HasTrait.hasTrait;
+import static io.wix.hamcrest.zoo.MatcherPredicate.usingMatcher;
 import static org.hamcrest.Matchers.allOf;
 
 /**

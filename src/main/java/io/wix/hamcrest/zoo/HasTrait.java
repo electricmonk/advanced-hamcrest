@@ -1,8 +1,8 @@
-package io.wix.hamcrest;
+package io.wix.hamcrest.zoo;
 
 import org.hamcrest.FeatureMatcher;
 import org.hamcrest.Matcher;
-import io.wix.hamcrest.Animal.Trait;
+import io.wix.hamcrest.zoo.Animal.Trait;
 
 import java.util.Set;
 
